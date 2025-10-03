@@ -8,33 +8,18 @@ body {
   font-family: 'Minecraftia', monospace;
   color: #fff;
   overflow: hidden;
-
-  /* background image */
   background: url("assets/background.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
-/* login screen layout */
+/* login */
 #login-screen {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex; justify-content: center; align-items: center;
+  flex-direction: column; text-align: center;
   z-index: 2;
-}
-
-.login-box {
-  background: none; /* removed box background, minecraft style (dont mind this) */
-  padding: 0;
-  border-radius: 0;
-  box-shadow: none;
-  font-family: 'Minecraftia', monospace;
 }
 
 .login-box h1 {
@@ -43,51 +28,22 @@ body {
   margin-bottom: 10px;
   text-shadow: 2px 2px 0 #000;
 }
-
-.login-box p {
-  color: #ffff55; 
-  margin-bottom: 20px;
-  font-size: 1rem;
-}
-
+.login-box p { color: #ffff55; margin-bottom: 20px; font-size: 1rem; }
 
 .login-box input,
 .login-box button {
-  display: block;
-  width: 220px;
-  margin: 8px auto;
-  padding: 10px;
-  font-family: 'Minecraftia', monospace;
-  font-size: 16px;
-  text-align: center;
-  background: #aaa;
-  border: 3px solid #555;
-  cursor: pointer;
-  outline: none;
+  display: block; width: 220px; margin: 8px auto; padding: 10px;
+  font-family: 'Minecraftia', monospace; font-size: 16px; text-align: center;
+  border: 3px solid #555; cursor: pointer; outline: none;
 }
+.login-box input { background: #222; color: white; }
+.login-box button { background: #aaa; color: black; font-weight: bold; }
+.login-box button:hover { background: #ccc; box-shadow: 0 0 5px white; }
 
-.login-box input {
-  background: #222;
-  color: white;
-}
+/* hidden */
+.hidden { display: none !important; }
 
-.login-box button {
-  background: #aaa;
-  color: black;
-  font-weight: bold;
-}
-
-.login-box button:hover {
-  background: #ccc;
-  box-shadow: 0 0 5px white;
-}
-
-/* hidden screen */
-.hidden {
-  display: none;
-}
-
-/* note container */
+/* note box */
 .note {
   background: rgba(0,0,0,0.75);
   padding: 40px;
@@ -101,133 +57,28 @@ body {
   text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
   box-shadow: 0 0 30px rgba(0,0,0,0.8);
   animation: fadeIn 1.5s ease-in-out;
-  overflow: hidden;
-  font-family: 'Minecraftia', monospace; /* font design */
+  font-family: 'Minecraftia', monospace;
 }
-
-/* gif in bottom right */
 .note::after {
   content: "";
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 90px;
-  height: 90px;
-  background-image: url("assets/flowers.gif"); /* put your gif here */
-  background-size: contain;
-  background-repeat: no-repeat;
+  bottom: 10px; right: 10px;
+  width: 90px; height: 90px;
+  background-image: url("assets/flowers.gif");
+  background-size: contain; background-repeat: no-repeat;
   opacity: 0.9;
-  pointer-events: none;
 }
 
-/* effects */
+/* rain effect */
 .rain {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  position: absolute; width: 100%; height: 100%;
   background-image: url("assets/drops.gif");
   animation: rain 3.0s linear infinite;
-  top: 0;
-  left: 0;
-  opacity: 0.25;
-  z-index: 0;
+  top: 0; left: 0; opacity: 0.25; z-index: 0;
   pointer-events: none;
 }
 
-.hidden {
-  display: none !important;
-}
-
-/* button */
-.mc-button {
-  display: block;
-  margin: 20px auto 0;
-  padding: 12px 25px;
-  font-family: 'Minecraftia', monospace;
-  font-size: 18px;
-  text-align: center;
-  background: #aaa;
-  border: 3px solid #555;
-  cursor: pointer;
-  outline: none;
-  color: black;
-  font-weight: bold;
-}
-
-.mc-button:hover {
-  background: #ccc;
-  box-shadow: 0 0 5px white;
-}
-
-/* modal background */
-.modal {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-/* hidden by default */
-.hidden {
-  display: none;
-}
-
-/* modal content box */
-.modal-content {
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  text-align: center;
-  max-width: 500px;
-  width: 90%;
-  font-family: 'Minecraftia', monospace;
-  color: #333;
-  box-shadow: 0 0 20px rgb(255, 255, 255, 0.6),
-              0 0 40px rgba(0, 255, 255, 0.4);
-  animation: fadeIn 0.6s ease-in-out;
-}
-
-/* title */
-.modal-content h2 {
-  color: #ff4da6;
-  font-size: 22px;
-  margin-bottom: 15px;
-  text-shadow: 0 0 6px rgba(255, 20, 147, 0.6);
-}
-
-/* message text design */
-.modal-content p {
-  margin-bottom: 10px;
-  line-height: 1.6;
-  font-size: 15px;
-}
-
-/* image */
-.love-img {
-  margin-top: 15px;
-  max-width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(255, 182, 193, 0.6);
-}
-
-/* close button (X) */
-.close-btn {
-  position: absolute;
-  top: 10px; right: 20px;
-  font-size: 26px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #ff4da6;
-}
-.close-btn:hover {
-  color: #ff80c0;
-}
-
-/* button */
+/* button after typing */
 .mc-button {
   display: block;
   margin: 20px auto 0;
@@ -248,12 +99,68 @@ body {
   box-shadow: 0 0 20px #ff69b4;
 }
 
+/* modal */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background: #fdfcf7;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 90%;
+  width: 400px;
+  font-family: 'Minecraftia', monospace;
+  color: #333;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+  overflow-y: auto;
+  max-height: 80vh;
+  position: relative;
+  animation: fadeIn 0.6s ease-in-out;
+}
+.modal-content h1 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #4b2e83;
+  text-shadow: 0 0 6px rgba(100, 50, 150, 0.4);
+}
+.modal-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  white-space: pre-line;
+}
+.love-img {
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 182, 193, 0.6);
+}
+.close-btn {
+  position: absolute;
+  top: 10px; right: 20px;
+  font-size: 26px; font-weight: bold;
+  cursor: pointer;
+  color: #ff4da6;
+}
+.close-btn:hover { color: #ff80c0; }
+.bottom-btn {
+  position: relative; top: auto; right: auto;
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 8px 20px;
+}
+
 /* animations */
 @keyframes rain {
   0% { background-position: 0 0; }
   100% { background-position: 15% 100%; }
 }
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }

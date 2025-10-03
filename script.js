@@ -1,15 +1,26 @@
-const correctPassword = "083279"; // change your password here
+const correctPassword = "tayan ko"; // change your password here
 
-const noteText = `hey... i hope you’re doing fine out there.
-Honestly, i’m really glad i got to know you, 
-even if it didn’t last long.
-sometimes, it feels like the universe just... 
-wasn’t on our side.
-we couldn’t hold on, no matter how much if wanted to.
-maybe... someday, we’ll meet 
-again — as better versions of ourselves?
-and if our paths never cross again, 
-may the world still be kind to you.`;
+const noteText = `happy bf’s day 🤍 almost 3 weeks pa lang tayong 
+magkausap pero parang ang dami ko nang na-feel at 
+natutunan dahil sayo. hindi ko talaga in-expect na 
+magiging ganito ka ka-special sa life ko in such a
+short time. ang gaan ng bawat usap natin, and sobrang 
+grateful ako kasi dumating ka at pinili mong mag-stay 
+kahit na minsan feeling ko pabigat ako. thank you 
+kasi you always remind me na hindi ako gano’n 
+in your eyes, and that means so much to me.
+
+gusto ko lang din sabihin na sobrang na-appreciate ko
+yung patience at understanding mo. kahit na may times 
+na hindi ako okay, hindi mo ako tinatrato as less, 
+kundi pinaparamdam mo pa lalo na safe ako sayo. 
+and kahit hindi pa tayo officially anything, promise, 
+I’ll keep choosing you kasi ikaw yung naging reason kung 
+bakit mas gusto kong mag-heal, magpahinga, at maging 
+better version ng sarili ko. so ayan, happy bf’s 
+day ulit. thank you for making me feel cared for 
+and seen, love. kahit simple lang ‘to, 
+sana maramdaman mo how much you mean to me already.`;
 
 // check password
 function checkPassword() {
@@ -47,7 +58,7 @@ function typeWriter() {
 function showNextButton() {
   const note = document.querySelector(".note");
   const btn = document.createElement("button");
-  btn.textContent = "remember, i love you.";
+  btn.textContent = "i like you so much, click this btw";
   btn.classList.add("mc-button");
   btn.onclick = () => {
     document.getElementById("popup-modal").classList.remove("hidden");
