@@ -1,4 +1,4 @@
-/* General */
+/* general */
 body {
   margin: 0;
   height: 100vh;
@@ -9,12 +9,12 @@ body {
   color: #fff;
   overflow: hidden;
 
-  /* Background image */
+  /* background image */
   background: url("assets/background.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
-/* Login Screen layout */
+/* login screen layout */
 #login-screen {
   position: absolute;
   top: 0;
@@ -30,7 +30,7 @@ body {
 }
 
 .login-box {
-  background: none; /* Remove box background, Minecraft style */
+  background: none; /* removed box background, minecraft style (dont mind this) */
   padding: 0;
   border-radius: 0;
   box-shadow: none;
@@ -45,12 +45,12 @@ body {
 }
 
 .login-box p {
-  color: #ffff55; /* Minecraft yellow (like "Score: 0") */
+  color: #ffff55; 
   margin-bottom: 20px;
   font-size: 1rem;
 }
 
-/* Input & Button styled like Minecraft buttons */
+
 .login-box input,
 .login-box button {
   display: block;
@@ -82,12 +82,12 @@ body {
   box-shadow: 0 0 5px white;
 }
 
-/* Hidden screen */
+/* hidden screen */
 .hidden {
   display: none;
 }
 
-/* Note container */
+/* note container */
 .note {
   background: rgba(0,0,0,0.75);
   padding: 40px;
@@ -102,10 +102,10 @@ body {
   box-shadow: 0 0 30px rgba(0,0,0,0.8);
   animation: fadeIn 1.5s ease-in-out;
   overflow: hidden;
-  font-family: 'Minecraftia', monospace; /* ✅ Changed font */
+  font-family: 'Minecraftia', monospace; /* font design */
 }
 
-/* Flower gif in bottom right */
+/* gif in bottom right */
 .note::after {
   content: "";
   position: absolute;
@@ -113,7 +113,7 @@ body {
   right: 10px;
   width: 90px;
   height: 90px;
-  background-image: url("assets/flowers.gif"); /* 🌸 put your GIF here */
+  background-image: url("assets/flowers.gif"); /* put your gif here */
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.9;
@@ -138,7 +138,7 @@ body {
   display: none !important;
 }
 
-/* Minecraft-style button */
+/* button */
 .mc-button {
   display: block;
   margin: 20px auto 0;
@@ -159,7 +159,7 @@ body {
   box-shadow: 0 0 5px white;
 }
 
-/* Modal background */
+/* modal background */
 .modal {
   position: fixed;
   top: 0; left: 0;
@@ -171,12 +171,12 @@ body {
   z-index: 999;
 }
 
-/* Hidden by default */
+/* hidden by default */
 .hidden {
   display: none;
 }
 
-/* Modal content box */
+/* modal content box */
 .modal-content {
   background: #fff;
   padding: 30px;
@@ -186,12 +186,12 @@ body {
   width: 90%;
   font-family: 'Minecraftia', monospace;
   color: #333;
-  box-shadow: 0 0 20px rgba(255, 105, 180, 0.6),
+  box-shadow: 0 0 20px rgb(255, 255, 255, 0.6),
               0 0 40px rgba(0, 255, 255, 0.4);
   animation: fadeIn 0.6s ease-in-out;
 }
 
-/* Title */
+/* title */
 .modal-content h2 {
   color: #ff4da6;
   font-size: 22px;
@@ -199,14 +199,14 @@ body {
   text-shadow: 0 0 6px rgba(255, 20, 147, 0.6);
 }
 
-/* Message text */
+/* message text design */
 .modal-content p {
   margin-bottom: 10px;
   line-height: 1.6;
   font-size: 15px;
 }
 
-/* Image */
+/* image */
 .love-img {
   margin-top: 15px;
   max-width: 300px;
@@ -214,7 +214,7 @@ body {
   box-shadow: 0 0 12px rgba(255, 182, 193, 0.6);
 }
 
-/* Close button (X) */
+/* close button (X) */
 .close-btn {
   position: absolute;
   top: 10px; right: 20px;
@@ -227,7 +227,7 @@ body {
   color: #ff80c0;
 }
 
-/* Updated MC-style button */
+/* button */
 .mc-button {
   display: block;
   margin: 20px auto 0;
@@ -248,7 +248,7 @@ body {
   box-shadow: 0 0 20px #ff69b4;
 }
 
-/* Animations */
+/* animations */
 @keyframes rain {
   0% { background-position: 0 0; }
   100% { background-position: 15% 100%; }

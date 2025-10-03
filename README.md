@@ -5,6 +5,7 @@
 ## line 57 for the custom audio
 
 ## 2. go to script.js for the texts because i know you’ll change the texts, there you can see the text that will appear when you enter the password.
+## if you want to change the password, go to line 1
 
 ## 3. go to style.css for the design, i hope you know how to read this file lol. 
 ## line 13 for the background image, again, put the file into the assets folder.
@@ -12,3 +13,4 @@
 ## line 128 for the effects like the dropping pixilated hearts, you can search it on pinte or giphy website. (MUST BE AT THE ASSETS FOLDER)
 
 # NOTE : ALL IMAGES AND GIF + SOUND EFFECTS MUST BE AT THE ASSETS FOLDER
+# i already left some notes in the file, mindset nalang kung paano mo intindihin

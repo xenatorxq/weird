@@ -11,19 +11,19 @@ again — as better versions of ourselves?
 and if our paths never cross again, 
 may the world still be kind to you.`;
 
-// Check password
+// check password
 function checkPassword() {
   const input = document.getElementById("password").value;
   if (input === correctPassword) {
-    // Switch screens
+    // switch screens
     document.getElementById("login-screen").classList.add("hidden");
     document.getElementById("note-screen").classList.remove("hidden");
 
-    // Reset typing each time
+    // reset typing each time
     document.getElementById("typed-text").innerHTML = "";
     i = 0;
 
-    // Start typewriter + thunder
+    // start typewriter
     typeWriter();
     playThunder();
   } else {
@@ -31,7 +31,7 @@ function checkPassword() {
   }
 }
 
-// Typewriter effect
+// typewriter effect
 let i = 0;
 function typeWriter() {
   if (i < noteText.length) {
@@ -43,7 +43,7 @@ function typeWriter() {
   }
 }
 
-// Show Minecraft-style button after typing
+// show button after typing
 function showNextButton() {
   const note = document.querySelector(".note");
   const btn = document.createElement("button");
@@ -55,7 +55,7 @@ function showNextButton() {
   note.appendChild(btn);
 }
 
-// Close modal
+// close modal
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("popup-modal");
   const closeBtn = document.querySelector(".close-btn");
@@ -67,13 +67,13 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 });
 
-// Play thunder after delay
+// play audio after delay
 function playThunder() {
   const thunder = document.getElementById("thunder-sound");
-  setTimeout(() => thunder.play(), 3000); // thunder after 3 sec
+  setTimeout(() => thunder.play(), 1000); // thunder after 3 sec
 }
 
-// Allow pressing Enter key to submit password
+// allow pressing enter key to submit password
 document.getElementById("password").addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
     checkPassword();
