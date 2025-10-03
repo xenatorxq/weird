@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a hidden note for you</title>
+  <meta name="description" content="i created this website for you to see the note i’ve written for you and i hope you’ll like it. it’s just a simple note.">
+  <link rel="icon" type="image/svg+xml" href="assets/icon.jpg">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font design -->
+  <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
+</head>
+<body>
+  <!-- this is the log in screen -->
+  <div id="login-screen">
+    <div class="rain"></div> <!-- effects -->
+    <div class="login-box">
+      <!-- title -->
+      <h1>only you know the password</h1>
+      <!-- subtitle -->
+      <p>so try thinking for it.</p>
+      <!-- button -->
+      <input type="password" id="password" placeholder="type it here..." autocomplete="on">
+      <!-- xoxo -->
+      <button onclick="checkPassword()">done?</button>
+    </div>
+  </div>
+
+  <!-- note -->
+  <div id="note-screen" class="hidden">
+    <div class="rain"></div>
+    <div class="note">
+      <pre id="typed-text"></pre>
+    </div>
+  </div>
+
+<!-- Pop-up Modal -->
+<div id="popup-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>hi babyy 💖</h2>
+    <p>
+      happy valentine‘s day. i just want to thank you for everything you do for me my babyy. 
+      you are my sun on my darkest days / moments. you are my everything, 
+      the love of my life, my soulmate, my wife, my girlfriend, my happiness 
+      and just my everything!! 💕
+    </p>
+    <p>
+      i love you so muchh and i always will, no matter what. it could be us in the picture hehe 😘  
+      i love you always and forever!
+    </p>
+    <img src="assets/us.jpg" alt="my love" class="love-img">
+  </div>
+</div>
+
+  <!-- audio -->
+  <audio id="thunder-sound" src="assets/rain.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
